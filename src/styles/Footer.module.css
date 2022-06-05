@@ -1,0 +1,120 @@
+.footer-wrapper{
+    padding: 7rem 0;
+    background: #080827;
+}
+.footer-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
+.footer-col{
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-col-center{
+    text-align: center;
+}
+.footer-col-center img{
+    margin-bottom: 30px;
+    vertical-align: middle;
+    border-style: none;
+    text-align: center!important;
+}
+.footer-col-center span{
+    text-align: center;
+}
+.footer-col-center span a{
+    font-size: 50px;
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.footer-col-center p{
+    color: #c5c5dd;
+    margin-bottom: 1px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 0;
+    font-weight: normal;
+}
+.footer-bottom{
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.footer-bottom-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.footer-bottom-col{
+    width: 80%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-bottom-copyright p{
+    text-align: center;
+    color: #393a50;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 12px;
+}
+.footer-bottom-copyright p i{
+    color: #3e64ff;
+}
+.footer-bottom-copyright p a{
+    color: #3e64ff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) and (max-width:1267px){
+    .footer-container{
+        height:100%;
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width:991px){
+    .footer-container{
+        max-width: 720px;
+    }
+    .footer-col-center span a{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 576px){  
+    .footer-container{
+        max-width: 540px;
+    }
+    .footer-col{
+        width: 100%;
+    }
+    .footer-bottom-col{
+        width: 100%;
+    }
+    .footer-col-center span a{
+        font-size: 30px;
+    }
+}

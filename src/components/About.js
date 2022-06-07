@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from '../styles/About.module.css'
+import ExampleDoc from '../myCV/Harpreet_Kaur_CV.pdf'
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
         <div className={`${styles["about-container"]}`}>
             <div className={`${styles["about-row"]}`}>
                 <div className={`${styles["about-col-6-left"]}`}>
@@ -32,7 +33,7 @@ const About = () => {
                                 <span>Project complete</span>
                             </p>
                             <p className={`${styles["about-right-bottom-content-btn-cv"]}`}>
-                                <a href="/">Download CV</a>
+                                <a href={ExampleDoc} download="Harpreet-Kaur-CV" target='_blank'>Download CV</a>
                             </p>
                         </div>
                     </div>

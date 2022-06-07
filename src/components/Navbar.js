@@ -1,4 +1,5 @@
 import React from 'react'
+import {HashLink as Link} from 'react-router-hash-link'
 import styles from '../styles/Navbar.module.css'
 
  const Navbar = () => {
@@ -12,11 +13,12 @@ import styles from '../styles/Navbar.module.css'
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" className={`${styles["hamburger"]}`}>&#9776;</label>
                     <div className={`${styles["menu"]}`}>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Resume</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><Link smooth to="#hero">Home</Link></li>
+                        <li><Link smooth to="#about">About</Link></li>
+                        <li><Link smooth to="#skills">Skills</Link></li>
+                        <li><Link smooth to="#resume">Resume</Link></li>
+                        <li><Link smooth to="#projects">Projects</Link></li>
+                        <li><Link smooth to="#contact">Contact</Link></li>
                     </div>
                 </ul>  
             </div> 

@@ -1,8 +1,14 @@
 import React from 'react'
 import styles from '../styles/Contact.module.css'
+import { useForm } from 'react-hook-form'
+
 const Contact = () => {
-  return (
-    <div>
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = (data) => {
+        console.log(data);
+    }
+    return (
+    <div id="contact">
         <div className={`${styles["contact-wrapper"]}`}>
             <div className={`${styles["contact-container"]}`}>
                 <div className={`${styles["contact-header-row"]}`}>
@@ -62,23 +68,31 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className={`${styles["contact-form-row"]}`}>
+                <div id="contactform" className={`${styles["contact-form-row"]}`}>
                     <div className={`${styles["contact-form-col-6"]}`}>
                         <div className={`${styles["contact-form-bg-image"]}`}></div>
                     </div>
                     <div className={`${styles["contact-form-col-6"]}`}>
-                        <form >
+                        <form onSubmit={handleSubmit(onSubmit)}>
                             <div className={`${styles["contact-form-form-group"]}`}>
-                                <input type="text" className={`${styles["contact-form-form-control"]}`} placeholder="Your Name" />
+                                <input type="text" className={`${styles["contact-form-form-control"]}`} placeholder="Your Name" {...register("firstName", { required: true, maxLength: 10 })}/>
+                                {errors.firstName && <p className={`${styles["contact-form-errors"]}`}>Please check the First Name</p>}
                             </div>
                             <div className={`${styles["contact-form-form-group"]}`}>
-                                <input type="text" className={`${styles["contact-form-form-control"]}`} placeholder="Your Email" />
+                                <input type="text" className={`${styles["contact-form-form-control"]}`} placeholder="Your Email" 
+                                    {...register("email", 
+                                    { 
+                                        required: true,  
+                                        pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
+                                    })}
+                                />
+                                {errors.email && <p className={`${styles["contact-form-errors"]}`}>Please check the Email</p>}
                             </div>
                             <div className={`${styles["contact-form-form-group"]}`}>
                                 <input type="text" className={`${styles["contact-form-form-control"]}`} placeholder="Subject" />
                             </div>
                             <div className={`${styles["contact-form-form-group"]}`}>
-                                <textarea  rows="7" cols="30" className={`${styles["contact-form-form-control"]}`} placeholder="Message"></textarea>
+                                <textarea  rows="7" cols="30" className={`${styles["contact-form-form-control"]}`} placeholder="Message" ></textarea>
                             </div>
                             <div className={`${styles["contact-form-form-group"]}`}>
                                 <input type="submit" value="Send Message" className={`${styles["contact-form-btn"]}`} />

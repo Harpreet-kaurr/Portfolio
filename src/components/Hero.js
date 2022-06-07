@@ -3,7 +3,7 @@ import styles from '../styles/Hero.module.css'
 
 const Hero = () => {
   return (
-    <div>
+    <div id="hero">
         <div className={`${styles["hero-wrapper"]}`}>
             {/* <div className={`${styles["hero-overlay"]}`}></div> */}
             <div className={`${styles["hero-container"]}`}>

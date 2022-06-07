@@ -41,7 +41,7 @@
     background-color: transparent;
     color: #000;
 }
-.resume-col-3 nav ul li a.active-item{
+ .resume-col-3 nav ul li a.active-item{
     color: #3e64ff;
     margin-left: 20px;
     position: relative;
@@ -55,7 +55,7 @@
     content: '';
     transform: translateY(-50%);
     background: #3e64ff;
-}
+} 
 .resume-col-9{
     width: 75%;
     padding-right: 15px;

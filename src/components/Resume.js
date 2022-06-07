@@ -1,24 +1,35 @@
+
 import React from 'react'
+import {HashLink as Link} from 'react-router-hash-link'
 import styles from '../styles/Resume.module.css'
 
 const Resume = () => {
+    const handlechange = (e) =>{
+        var target = e.currentTarget.id;
+        var tabs = document.getElementsByClassName('tab');
+        for(var i=0;i<tabs.length;i++){
+            // console.log(tabs[i]);
+            tabs[i].classList.remove('active-item');
+        };
+        document.getElementById(target).classList.add('active-item');
+    }
   return (
-    <div>
+    <div id="resume">
         <div className={`${styles["resume-wrapper"]}`}>
             <div className={`${styles["resume-container"]}`}>
                 <div className={`${styles["resume-row"]}`}>
                     <div className={`${styles["resume-col-3"]}`}>
                         <nav>
                             <ul>
-                                <li><a href="#page-1" className={`${styles["active-item"]}`}>Education</a></li>
-                                <li><a href="#page-2" class="">Experience</a></li>
-                                <li><a href="#page-3" class="">Skills</a></li>
-                                <li><a href="#page-4" class="">Awards</a></li>
+                                <li><Link smooth to="#page-1"  id="page1" className="tab active-item" onClick={handlechange}>Education</Link></li>
+                                <li ><Link smooth to="#page-2" id="page2" className="tab" onClick={handlechange}>Experience</Link></li>
+                                <li><Link smooth to="#page-3"  id="page3" className="tab" onClick={handlechange}>Skills</Link></li>
+                                <li><Link smooth to="#page-4"  id="page4" className="tab" onClick={handlechange}>Awards</Link></li>
                             </ul>
                         </nav>
                     </div>
                     <div className={`${styles["resume-col-9"]}`}>
-                        <div className={`${styles["resume-page-1"]}`}>
+                        <div id="page-1" className={`${styles["resume-page-1"]}`}>
                             <h2>Education</h2>
                             <div className={`${styles["resume-education-wrapper"]}`}>
                                 <div className={`${styles["resume-education-icon"]}`}>
@@ -57,7 +68,7 @@ const Resume = () => {
                         </div>
 
 
-                        <div className={`${styles["resume-page-1"]}`}>
+                        <div id="page-2" className={`${styles["resume-page-1"]}`}>
                             <h2>Experience</h2>
                             <div className={`${styles["resume-education-wrapper"]}`}>
                                 <div className={`${styles["resume-education-icon"]}`}>
@@ -85,7 +96,7 @@ const Resume = () => {
 
 
 
-                        <div className={`${styles["resume-page-1"]}`}>
+                        <div id="page-3" className={`${styles["resume-page-1"]}`}>
                             <h2>Awards & Certifications</h2>
                             <div className={`${styles["resume-education-wrapper"]}`}>
                                 <div className={`${styles["resume-education-icon"]}`}>
@@ -113,7 +124,7 @@ const Resume = () => {
                         </div>
 
 
-                        <div className={`${styles["resume-page-1"]}`}>
+                        <div id="page-4" className={`${styles["resume-page-1"]}`}>
                             <h2>Skills</h2>
                             <div className={`${styles["resume-skills-row"]}`}>
                                 <div className={`${styles["resume-skills-col-3"]}`}>

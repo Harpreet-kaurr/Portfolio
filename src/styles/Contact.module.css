@@ -178,3 +178,6 @@ textarea{
         width: 100%;
     }
 }
+.contact-form-errors{
+    color:red;
+}

@@ -71,14 +71,7 @@
     display: block;
     text-decoration: none;
   }
-  .navbar-item a::after {
-    display:block;
-    content: '';
-    border-bottom: 3px solid #3e64ff;  
-    transform: scaleX(0);  
-    transition: all 0.2s ease-in-out;
-  }
-  .navbar-item a:hover::after { transform: scaleX(0.9); }
+ 
   .navbar-item a span{
     position: relative;
     display: block;
@@ -103,7 +96,9 @@
 @media (max-width: 1008px) {
 } */
 
-
+.active-menu{
+  border-bottom: 2px solid #3e64ff;
+}
 
  a {
   text-decoration: none;
@@ -115,14 +110,14 @@
 
  .navbar {
   width: 100%;
-  padding: 20px 0;
-  position: absolute;
+  padding: 10px 0;
  }
+
  .navbar-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color:transparent;
+  
   color: #fff;
   max-width: 1110px;
   padding-left: 15px;
@@ -158,17 +153,26 @@
   z-index: -1;
   border-radius: 50%;
 }
+
+.menu li::after {
+  display:block;
+  content: '';
+  border-bottom: 3px solid #3e64ff;  
+  transform: scaleX(0);  
+  transition: all 0.2s ease-in-out;
+}
+.menu li:hover::after { transform: scaleX(0.9); }
  /* NAVBAR MENU */
  .menu {
   display: flex;
   gap: 1em;
   font-size: 18px;
  }
- .menu li:hover {
+ /* .menu li:hover {
   background-color: #3e64ff;
   border-radius: 5px;
   transition: 0.3s ease;
- }
+ } */
  .menu li {
   padding: 5px 14px;
  }
@@ -207,6 +211,9 @@ input[type=checkbox]{
    .navbar{
      background-color: #3e64ff;
    }
+   .menu li::after {
+    border-bottom: 3px solid white;  
+  }
  .menu { 
   display:none;
   position: absolute;
@@ -218,7 +225,6 @@ input[type=checkbox]{
  }
  .menu li:hover {
   display: inline-block;
-  background-color:#93a6f4;
   transition: 0.3s ease;
  }
  .menu li + li {

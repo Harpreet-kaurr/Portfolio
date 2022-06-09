@@ -39,7 +39,7 @@ const Resume = () => {
                                     <span>2013-2016</span>
                                     <h2>Bachelor of Computer Application</h2>
                                     <span>Guru Arjan Dev Khalsa Collage</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                    <p> <strong>Subject</strong> : OOPs, C/C++, DBMS, Operating System, Web Tech. using ASP.NET, Computer Networks, Data Structure, Internet Application HTML & CSS,  </p>
                                 </div>
                             </div>
                             <div className={`${styles["resume-education-wrapper"]}`}>
@@ -50,7 +50,7 @@ const Resume = () => {
                                     <span>2016-2017</span>
                                     <h2>Diploma in Computer Teaching</h2>
                                     <span>Apex Institute</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                    <p><strong>Subject</strong> : MS-Word , MS-Powerpoint, Fundamentals of teaching, C Language, Web Development using HTML & CSS</p>
                                 </div>
                             </div>
 
@@ -62,7 +62,7 @@ const Resume = () => {
                                     <span>2017-2020</span>
                                     <h2>Masters of Computer Application</h2>
                                     <span>St. Soldier Technical and Management Collage</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                    <p><strong>Subject</strong> : OOPs, RDBMS, Data Structure and Algorithm, Data Communication and Networks, Web Development</p>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,8 @@ const Resume = () => {
                                     <span>2020-2021</span>
                                     <h2>Fullstack Web Developer</h2>
                                     <span>Medical Network Pvt. Ltd.</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                    <p>I worked mainly on frontend at mednet , my responsibilities includes requirement gathering, design , develop and test. I worked on their product called <strong>janchwala, 121cure, dawaiwala</strong>.
+                                    Fixed Bugs from "dawaiwala" website and implemented enhancements that significantly improved web functionality and speed. </p>
                                 </div>
                             </div>
                             <div className={`${styles["resume-education-wrapper"]}`}>
@@ -89,42 +90,18 @@ const Resume = () => {
                                     <span>2021-Present</span>
                                     <h2>Frontent Web Developer</h2>
                                     <span>Freelancer</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                    <p>Developing , optimizing, maintaining websites by utilizing <strong>HTML, CSS, Javascript and Hubspot themed sites</strong>.
+                                        Developed dynamic and interactive websites that ensured high traffic, page views and user Experience.</p>
                                 </div>
                             </div>
                         </div>
 
+
+
+                        
 
 
                         <div id="page-3" className={`${styles["resume-page-1"]}`}>
-                            <h2>Awards & Certifications</h2>
-                            <div className={`${styles["resume-education-wrapper"]}`}>
-                                <div className={`${styles["resume-education-icon"]}`}>
-                                    <span class="fa fa-graduation-cap"></span>
-                                </div>
-                                <div className={`${styles["resume-education-details"]}`}>
-                                    <span>2017-2020</span>
-                                    <h2>Merit List Holder</h2>
-                                    <span>I.K.G Punjab Technical University</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                </div>
-                            </div>
-
-                            <div className={`${styles["resume-education-wrapper"]}`}>
-                                <div className={`${styles["resume-education-icon"]}`}>
-                                    <span class="fa fa-graduation-cap"></span>
-                                </div>
-                                <div className={`${styles["resume-education-details"]}`}>
-                                    <span>2021</span>
-                                    <h2>Data Analyst</h2>
-                                    <span>Google Data Analyst Certifications</span>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div id="page-4" className={`${styles["resume-page-1"]}`}>
                             <h2>Skills</h2>
                             <div className={`${styles["resume-skills-row"]}`}>
                                 <div className={`${styles["resume-skills-col-3"]}`}>
@@ -172,6 +149,33 @@ const Resume = () => {
                                         <h2>C/C++</h2>
                                     </div>
                                 </div>  
+                            </div>
+                        </div>
+
+                        <div id="page-4" className={`${styles["resume-page-1"]}`}>
+                            <h2>Awards & Certifications</h2>
+                            <div className={`${styles["resume-education-wrapper"]}`}>
+                                <div className={`${styles["resume-education-icon"]}`}>
+                                    <span class="fa fa-graduation-cap"></span>
+                                </div>
+                                <div className={`${styles["resume-education-details"]}`}>
+                                    <span>2017-2020</span>
+                                    <h2>Merit List Holder</h2>
+                                    <span>I.K.G Punjab Technical University</span>
+                                    <p>With a lot of hardwork, passion and dedication i secured merit positions in every semester continuously.I secured <strong> Rank 1 </strong> in 1st semester among  <strong>52 Collages</strong> approx. and thousands of studends.</p>
+                                </div>
+                            </div>
+
+                            <div className={`${styles["resume-education-wrapper"]}`}>
+                                <div className={`${styles["resume-education-icon"]}`}>
+                                    <span class="fa fa-graduation-cap"></span>
+                                </div>
+                                <div className={`${styles["resume-education-details"]}`}>
+                                    <span>2021</span>
+                                    <h2>Data Analyst</h2>
+                                    <span>Google Data Analyst Certifications</span>
+                                    <p>Learnt key analytical skills and tools like SQL, R, MS-Excel with Google Data Analytics Certificate.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

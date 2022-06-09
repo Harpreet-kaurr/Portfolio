@@ -13,3 +13,21 @@
     transform: translateY(-50%);
     background: #3e64ff;
 }
+#about:before { 
+    content: " ";
+    background: white;
+    display: block;
+    margin-top: -40px;
+    padding-top: 40px;
+  }
+  .active-menu{
+      border-bottom: 2px solid #3e64ff;
+  }
+  .navbar-scroll{
+    position: fixed;
+    top:0;
+    z-index: 100;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    background-color:white;
+    transition: .3s all ease-out;
+ }

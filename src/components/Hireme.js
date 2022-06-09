@@ -9,9 +9,10 @@ const Hireme = () => {
             <div className={`${styles["hire-container"]}`}>
                 <div className={`${styles["hire-row"]}`}>
                     <div className={`${styles["hire-col"]}`}>
-                        <h2>I'm <span>Available</span> for freelancing</h2>
-                        <p className={`${styles["hire-col-p"]}`}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p className={`${styles["hire-col-p-btn"]}`}><Link smooth to="#contactform">Hire me</Link></p>
+                        <h2>I'm a <span> Frontent</span> Developer</h2>
+                        <p className={`${styles["hire-col-p"]}`}>
+                        I craft user interface using modern frontend web technologies.</p>
+                        <p className={`${styles["hire-col-p-btn"]}`}><Link smooth to="#contact">Contact me</Link></p>
                     </div>
                 </div>
             </div>

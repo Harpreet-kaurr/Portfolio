@@ -26,7 +26,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 class="mb-4">github</h3>
-                                <p><a href='/'>yoursite.com</a></p>
+                                <p><a href='https://github.com/Harpreet-kaurr' target="_blank">Harpreet-kaurr</a></p>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 class="mb-4">Contact</h3>
-                                <p><a href='/'>yoursite.com</a></p>
+                                <p><a href='http://harpreet-kaur.in/' target="_blank">harpreet-kaur.in</a></p>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 class="mb-4">Email</h3>
-                                <p><a href='/'>yoursite.com</a></p>
+                                <p><a href=""  onClick={() => window.location = 'mailto:kaurharp1995@gmail.com'} target="_blank">kaurharp1995@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 class="mb-4">LinkedIn</h3>
-                                <p><a href='/'>yoursite.com</a></p>
+                                <p><a href='https://www.linkedin.com/in/harpreetkaur1995/' target="_blank">harpreetkaur1995</a></p>
                             </div>
                         </div>
                     </div>

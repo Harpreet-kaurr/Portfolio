@@ -9,7 +9,7 @@ const Projects = () => {
                 <div className={`${styles["projects-header-row"]}`}>
                     <div className={`${styles["projects-header-col-12"]}`}>
                         <h2>Projects</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <p>These are projects i develop as my side learning during my job or freelancing journey.</p>
                     </div>
                 </div>
 
@@ -19,9 +19,9 @@ const Projects = () => {
                             <a  href="/" className={`${styles["projects-images-bg-a-tag"]}`} />
                             <div className={`${styles["projects-images-desc-wrapper"]}`}>
                                 <h3 className={`${styles["projects-images-desc-h3"]}`}>
-                                    <a href="/">Why Lead Generation is Key for Business Growth</a>
+                                    <a href="/">My Portfolio</a>
                                 </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p>Tech Stack : ReactJs, States, JSX, react-router-hash-link, react-hook-form, CSS3 </p>
                             </div>
                         </div>
                     </div>
@@ -31,9 +31,9 @@ const Projects = () => {
                             <a  href="/" className={`${styles["projects-images-bg-a-tag"]}`} />
                             <div className={`${styles["projects-images-desc-wrapper"]}`}>
                                 <h3 className={`${styles["projects-images-desc-h3"]}`}>
-                                    <a href="/">Why Lead Generation is Key for Business Growth</a>
+                                    <a href="/">Music Player</a>
                                 </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p>Tech Stack : HTML, CSS , Javascript, DOM</p>
                             </div>
                         </div>
                     </div>
@@ -43,9 +43,9 @@ const Projects = () => {
                             <a  href="/" className={`${styles["projects-images-bg-a-tag"]}`} />
                             <div className={`${styles["projects-images-desc-wrapper"]}`}>
                                 <h3 className={`${styles["projects-images-desc-h3"]}`}>
-                                    <a href="/">Why Lead Generation is Key for Business Growth</a>
+                                    <a href="/">Movie and Tv Series Searching App</a>
                                 </h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p>Tech Stack : React, Material-UI, States, Hooks</p>
                             </div>
                         </div>
                     </div>
